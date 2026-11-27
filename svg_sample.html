@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPSP sample Web Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!-- description -->
+    <meta name="description" content="フォトアルバム、写真台紙を作成なら全進堂にお任せ下さい。フットワーク軽く全国各地に伺い、お客様のご要望に合った商品をご提案いたします。">
+    <!-- OG image -->
+    <meta property="og:image"
+        content="https://zenshindo.net/zd/wp-content/themes/zenshindo/assets/images/common/og.png" />
+    <meta property="og:image:secure_url"
+        content="https://zenshindo.net/zd/wp-content/themes/zenshindo/assets/images/common/og.png" />
+    <meta name="twitter:image"
+        content="https://zenshindo.net/zd/wp-content/themes/zenshindo/assets/images/common/og.png" />
+
+    <!-- canonical -->
+    <link rel="canonical" href="https://zenshindo.net/contact/">
+
+    <link rel="icon" href="https://zenshindo.net/zd/wp-content/uploads/2020/04/cropped-favicon-2-32x32.png"
+        sizes="32x32" />
+    <link rel="icon" href="https://zenshindo.net/zd/wp-content/uploads/2020/04/cropped-favicon-2-192x192.png"
+        sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed"
+        href="https://zenshindo.net/zd/wp-content/uploads/2020/04/cropped-favicon-2-180x180.png" />
+    <meta name="msapplication-TileImage"
+        content="https://zenshindo.net/zd/wp-content/uploads/2020/04/cropped-favicon-2-270x270.png" />
+    <link rel="stylesheet" href="style-v1.css">
+    <link rel="stylesheet" href="slide.css" media="print" onload="this.media='all'">
+    <!-- GA
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-18819178-1', 'auto');
+        ga('send', 'pageview');
+    </script> -->
+    <!-- Google tag (gtag.js)
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D9RCGRMW41"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D9RCGRMW41');
+    </script>
+     -->
+</head>
+
+<body>
+    <header>
+        <div class="header_top">
+            <h1 class="site_logo"><img src="./img/T_zenshi_logo.png" alt="BEST! 株式会社全進堂"></h1>
+
+            <button class="menu-trigger" id="js-hamburger" aria-controls="js-nav" aria-expanded="false"
+                aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="app-nav" id="js-nav" aria-label="メインナビゲーション">
+                <ul class="app-nav-list">
+                    <li class="app-nav-item"><a href="#">menu0</a></li>
+                    <li class="app-nav-item"><a href="#">menu1</a></li>
+                    <li class="app-nav-item"><a href="#">menu2</a></li>
+                    <li class="app-nav-item"><a href="#">menu3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 01. main_view -->
+        <section class="main_view">
+            <div class="main_view_imgwrap">
+                <ul class="main_view_list img-frame">
+                    <li class="main_view_list_item img-01">
+                        <img class="pc" src="./img/01_top_img.webp" alt="七五三写真" fetchpriority=high>
+                        <img class="sp" src="./img/01_top_img-sp.webp" alt="七五三写真" fetchpriority=high>
+                    </li>
+                    <li class="main_view_list_item txt-rl pc">もっと価値ある作品に</li>
+                    <li class="main_view_list_item img-02">
+                        <img class="pc" src="./img/02_top_img.webp" alt="ブライダル" fetchpriority=high>
+                        <img class="sp" src="./img/02_top_img-sp.webp" alt="ブライダル" fetchpriority=high>
+                    </li>
+                    <li class="main_view_list_item txt-rl pc">撮った写真を</li>
+                    <li class="main_view_list_item img-03">
+                        <img class="pc" src="./img/03_top_img.webp" alt="家族記念写" fetchpriority=high>
+                        <img class="sp" src="./img/03_top_img-sp.webp" alt="家族記念写" fetchpriority=high>
+                    </li>
+                </ul>
+                <p class="view_message sp">撮った写真を<br><span>もっと価値ある作品に</span></p>
+            </div>
+            <div class="main_view_txtwrap">
+                <h2 class="main_view_title">フォトアルバム・写真台紙の<br class="sp">専門メーカーが、<br class="pc">あなたのビジネスを<br
+                        class="sp">直接サポートします。</h2>
+                <p class="main_view_message">ブライダル・七五三・家族記念撮影を手掛ける<br
+                        class="sp">フリーランスカメラマンのために。<br>小ロット・別注対応・担当者による訪問サポートで、納品価格を一段上へ。</p>
+                <div class="sales_mv">
+                    <p class="sales_mv-btn1"><a href="https://zenshindo.net/contact/">サンプルを無料で借りてみる<span>→</span></a>
+                    </p>
+                    <p class="sales_mv-btn2"><a href="https://zenshindo.net/contact/">まずは相談する</a></p>
+                    <ul class="sales_mv_list">
+                        <li class="sales_mv_list_item">サンプル貸し出し無料</li>
+                        <li class="sales_mv_list_item">営業電話一切なし</li>
+                        <li class="sales_mv_list_item">テストプリント無料</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02. concerns -->
+        <section class="concerns">
+            <h2 class="concerns_title">
+                <img class="concerns_img pc" src="./img/01_PC_img.webp" alt="全進堂はフリーカメラマンの様々なお悩みに、直接お応えします"
+                    fetchpriority=high>
+                <img class="concerns_img sp" src="./img/01_PC_img-sp.webp" alt="全進堂はフリーカメラマンの様々なお悩みに、直接お応えします"
+                    fetchpriority=high>
+
+            </h2>
+        </section>
+
+        <!-- 03. company_infomation -->
+        <section class="company_infomation">
+            <img class="pc" src="./img/03_company_infomatin.svg" alt="会社情報">
+            <img class="sp" src="./img/03_company_infomatin-sp.svg" alt="会社情報">
+        </section>
+
+        <!-- 04. reasons -->
+        <section class="reasons">
+            <img class="pc" src="./img/04_reasons.svg" alt="選ばれる5つの理由">
+            <img class="sp" src="./img/04_reasons-sp.web" alt="選ばれる5つの理由">
+        </section>
+
+        <!-- 05. lineup -->
+        <section class="lineup">
+            <img class="pc" src="./img/05_lineup.svg" alt="商品ラインナップ">
+            <img class="sp" src="./img/05_lineup-sp.svg" alt="商品ラインナップ">
+            <p class="catalog_download"><a href="https://zenshindo.net/documents/197/">総合カタログを<br
+                        class="sp">無料ダウンロード<span>→</span></a></p>
+        </section>
+
+        <!-- 06. start_trading -->
+        <section class="start_trading">
+            <object class="pc" data="./img/06_start_trading.svg" type=""></object>
+            <object class="sp" data="./img/06_start_trading-sp.svg" type="">お取引開始までの流れ</object>
+        </section>
+
+        <!-- 07. trust -->
+        <section class="trust">
+            <img class="pc" src="./img/07_trust.svg" alt="全国のカメラマンからの信頼">
+            <img class="sp" src="./img/07_trust-sp.svg" alt="全国のカメラマンからの信頼">
+        </section>
+
+        <!-- 08. faq -->
+        <section class="faq">
+            <h2 class="faq_title">よくある質問<span>（FAQ）</span></h2>
+            <dl class="faq_list">
+                <dt class="faq_list_item-t">
+                    <span>Q.</span> 個人のフリーランスカメラマンでも取引できますか？
+                </dt>
+                <dd class="faq_list_item-d">
+                    <span>A.</span> はい、フリーランスの方も大歓迎です。法人・個人問わずお気軽にご相談ください。
+                </dd>
+
+                <dt class="faq_list_item-t">
+                    <span>Q.</span> サンプルは無料で借りられますか？
+                </dt>
+                <dd class="faq_list_item-d">
+                    <span>A.</span> はい、現物サンプルの無料貸し出しおよびテストプリントを無料で承っております。実際に手に取ってご確認いただけます。
+                </dd>
+
+                <dt class="faq_list_item-t">
+                    <span>Q.</span> 1冊・少量からの注文は可能ですか？
+                </dt>
+                <dd class="faq_list_item-d">
+                    <span>A.</span> はい、必要部数の1冊からご注文いただけます。在庫を抱えるリスクなくお試しいただけます。
+                </dd>
+
+                <dt class="faq_list_item-t">
+                    <span>Q.</span> サイズや仕様のカスタマイズはできますか？
+                </dt>
+                <dd class="faq_list_item-d">
+                    <span>A.</span> はい、サイズ・素材・形・ページ数など別注対応が可能です。まずはお問い合わせください。
+                </dd>
+
+                <dt class="faq_list_item-t">
+                    <span>Q.</span> 納期はどれくらいかかりますか？
+                </dt>
+                <dd class="faq_list_item-d">
+                    <span>A.</span> 商品の制作のみであれば2〜3週間が目安です。詳細はご相談の上ご案内いたします。
+                </dd>
+            </dl>
+        </section>
+
+        <!-- 09. request -->
+        <section class="request">
+            <object class="pc" data="./img/09_request.svg" type="">サンプル貸し出しのお申し込み</object>
+            <object class="sp" data="./img/09_request-sp.svg" type="">サンプル貸し出しのお申し込み</object>
+        </section>
+    </main>
+    <footer>
+        <figure class="fotter_fig">
+            <img class="fotter_fig-img" src="./img/F_zenshi_logo.png" alt="BEST! 株式会社全進堂">
+        </figure>
+        <ul class="fotter_list">
+            <li class="fotter_list_item">
+                <ul class="fotter_list_item-list company_infomations">
+                    <li class="fotter_list_item-list_item">本社:〒460-0007<span> </span><br class="sp">愛知県名古屋市中区栄2-2-1 5-5A
+                    </li>
+                    <li class="fotter_list_item-list_item">TEL:052-251-8731<span> </span><br class="sp">FAX:052-264-8731
+                    </li>
+                    <li class="fotter_list_item-list_item">E-mail:toiawase@zenshindo.net</li>
+                </ul>
+            </li>
+            <li class="fotter_list_item sp">
+                <ul class="fotter_list_item-list company_links">
+                    <li class="fotter_list_item-list_item"><a href="https://zenshindo.net/privacy/">個人情報保護方針</a></li>
+                    <li class="fotter_list_item-list_item"><a href="https://www.zenshindo.net/">公式HPへ（zenshindo.net）</a>
+                    </li>
+                    <li class="fotter_list_item-list_item"><a href="https://shashin-album.jp/">ECサイト（写真アルバム工房）へ</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="fotter_list_item-list company_links pc">
+            <li class="fotter_list_item-list_item"><a href="https://zenshindo.net/privacy/">個人情報保護方針</a></li>
+            <li class="fotter_list_item-list_item"><a href="https://www.zenshindo.net/">公式HPへ（zenshindo.net）</a>
+            </li>
+            <li class="fotter_list_item-list_item"><a href="https://shashin-album.jp/">ECサイト（写真アルバム工房）へ</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        // JavaScriptでボタンのクリックイベントを制御
+        const hamburger = document.getElementById('js-hamburger');
+        const nav = document.getElementById('js-nav');
+
+        hamburger.addEventListener('click', () => {
+            // 現在のメニューの開閉状態（true または false）を取得
+            const isOpen = hamburger.getAttribute('aria-expanded') === 'true';
+
+            // 状態を反転させる
+            hamburger.setAttribute('aria-expanded', !isOpen);
+            nav.classList.toggle('is-active');
+
+            // ボタンの音声読み上げ用ラベルも切り替える
+            if (!isOpen) {
+                hamburger.setAttribute('aria-label', 'メニューを閉じる');
+            } else {
+                hamburger.setAttribute('aria-label', 'メニューを開く');
+            }
+        });
+    </script>
+</body>
+
+</html>
